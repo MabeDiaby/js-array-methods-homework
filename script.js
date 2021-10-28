@@ -14,7 +14,7 @@
 // const mayHoliday = holidays.find(holiday => holiday.month === "may");
 // console.log(mayHoliday);
 
-const words = ['cat','bath', 'orange', 'tap', 'bay', 'ha', 'etxravagant'];
+// const words = ['cat','bath', 'orange', 'tap', 'bay', 'ha', 'etxravagant'];
 
 // // // Question 2: Given the array above, write the callback for 'filter' to return
 // // // a new array that only has the words from the original that had less than four
@@ -29,8 +29,8 @@ const words = ['cat','bath', 'orange', 'tap', 'bay', 'ha', 'etxravagant'];
 
 // // Question 4: Given the same array of words, write the callback for 'some' to
 // // determine if any word in the array contains the letter 'x'.
-const doesAnyWordContainX = words.some((anyWord) => anyWord.includes('x'));
-console.log(doesAnyWordContainX);
+// const doesAnyWordContainX = words.some((anyWord) => anyWord.includes('x'));
+// console.log(doesAnyWordContainX);
 
 
 const developersArray = [
