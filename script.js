@@ -1,31 +1,37 @@
-// For this assignment, you should not delete any of the starter code or data.
-// You should fill in the arrow callback function that each iteration
-// method needs to meet each questions's criteria.
+// // For this assignment, you should not delete any of the starter code or data.
+// // You should fill in the arrow callback function that each iteration
+// // method needs to meet each questions's criteria.
 
-const holidays = [
-	{ name: 'valentines day', month: 'february' },
-	{ name: 'cinco de mayo', month: 'may' },
-	{ name: 'halloween', month: 'october' },
-];
+// const holidays = [
+// 	{ name: 'valentines day', month: 'february' },
+// 	{ name: 'cinco de mayo', month: 'may' },
+// 	{ name: 'halloween', month: 'october' },
+// ];
 
-// Question 1: Given the array above, write the callback for 'find' to return
-// the holiday object that occurs in the month of 'may'.
-const mayHoliday = holidays.find(() => {});
+// // Question 1: Given the array above, write the callback for 'find' to return
+// // the holiday object that occurs in the month of 'may'.
 
-const words = ['cat', 'bath', 'orange', 'tap', 'bay', 'ha', 'extravagant'];
+// const mayHoliday = holidays.find(holiday => holiday.month === "may");
+// console.log(mayHoliday);
 
-// Question 2: Given the array above, write the callback for 'filter' to return
-// a new array that only has the words from the original that had less than four
-// letters.
-const wordsWithLessThanFourLetters = words.filter(() => {});
+// const words = ['cat','bath', 'orange', 'tap', 'bay', 'ha', 'etxravagant'];
 
-// Question 3: Given the same array of words, write the callback for 'every' to
-// determine if all the words in the array contain the letter 'a'.
-const doesEveryWordContainA = words.every(() => {});
+// // Question 2: Given the array above, write the callback for 'filter' to return
+// // a new array that only has the words from the original that had less than four
+// // letters
+// const wordsWithLessThanFourLetters = words.filter((word) => word.length < 4)
+// console.log(wordsWithLessThanFourLetters)
 
-// Question 4: Given the same array of words, write the callback for 'some' to
-// determine if any word in the array contains the letter 'x'.
-const doesAnyWordContainX = words.some(() => {});
+// // Question 3: Given the same array of words, write the callback for 'every' to
+// // determine if all the words in the array contain the letter 'a'.
+// const doesEveryWordContainA = words.every((everyWord) => (everyWord.includes('a')));
+// console.log(doesEveryWordContainA);
+
+// // Question 4: Given the same array of words, write the callback for 'some' to
+// // determine if any word in the array contains the letter 'x'.
+// const doesAnyWordContainX = words.some((anyWord) => anyWord.includes('x'));
+// console.log(doesAnyWordContainX);
+
 
 const developersArray = [
 	{ name: 'ralph', language: 'javascript' },
@@ -54,4 +60,15 @@ const developersArray = [
   python: 3
 }
 */
-const devLanguageCounts = developersArray.reduce(() => {}, {});
+const devLanguageCounts = developersArray.reduce((ja, pyt) => {
+	// ja += pyt
+	if (ja.language === 'javascript' ? 1 : 0) {
+		console.log(ja);
+		return ja.language + 1
+	} 
+	else if (pyt == 'python' ? 0 : 1) {
+		pyt = pyt[ja] ++
+	}
+	return 'javascript ' + ja
+}, {})
+console.log(devLanguageCounts);
