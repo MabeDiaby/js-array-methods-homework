@@ -16,16 +16,16 @@
 
 const words = ['cat','bath', 'orange', 'tap', 'bay', 'ha', 'etxravagant'];
 
-// // Question 2: Given the array above, write the callback for 'filter' to return
-// // a new array that only has the words from the original that had less than four
-// // letters
-const wordsWithLessThanFourLetters = words.filter((word) => word.length < 4)
-console.log(wordsWithLessThanFourLetters)
+// // // Question 2: Given the array above, write the callback for 'filter' to return
+// // // a new array that only has the words from the original that had less than four
+// // // letters
+// const wordsWithLessThanFourLetters = words.filter((word) => word.length < 4)
+// console.log(wordsWithLessThanFourLetters)
 
 // // Question 3: Given the same array of words, write the callback for 'every' to
 // // determine if all the words in the array contain the letter 'a'.
-// const doesEveryWordContainA = words.every((everyWord) => (everyWord.includes('a')));
-// console.log(doesEveryWordContainA);
+const doesEveryWordContainA = words.every((everyWord) => (everyWord.includes('a')));
+console.log(doesEveryWordContainA);
 
 // // Question 4: Given the same array of words, write the callback for 'some' to
 // // determine if any word in the array contains the letter 'x'.
