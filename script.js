@@ -2,17 +2,17 @@
 // // You should fill in the arrow callback function that each iteration
 // // method needs to meet each questions's criteria.
 
-// const holidays = [
-// 	{ name: 'valentines day', month: 'february' },
-// 	{ name: 'cinco de mayo', month: 'may' },
-// 	{ name: 'halloween', month: 'october' },
-// ];
+const holidays = [
+	{ name: 'valentines day', month: 'february' },
+	{ name: 'cinco de mayo', month: 'may' },
+	{ name: 'halloween', month: 'october' },
+];
 
-// // Question 1: Given the array above, write the callback for 'find' to return
-// // the holiday object that occurs in the month of 'may'.
+// Question 1: Given the array above, write the callback for 'find' to return
+// the holiday object that occurs in the month of 'may'.
 
-// const mayHoliday = holidays.find(holiday => holiday.month === "may");
-// console.log(mayHoliday);
+const mayHoliday = holidays.find(holiday => holiday.month === "may");
+console.log(mayHoliday);
 
 // const words = ['cat','bath', 'orange', 'tap', 'bay', 'ha', 'etxravagant'];
 
