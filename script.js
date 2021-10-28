@@ -2,25 +2,25 @@
 // // You should fill in the arrow callback function that each iteration
 // // method needs to meet each questions's criteria.
 
-const holidays = [
-	{ name: 'valentines day', month: 'february' },
-	{ name: 'cinco de mayo', month: 'may' },
-	{ name: 'halloween', month: 'october' },
-];
+// const holidays = [
+// 	{ name: 'valentines day', month: 'february' },
+// 	{ name: 'cinco de mayo', month: 'may' },
+// 	{ name: 'halloween', month: 'october' },
+// ];
 
-// Question 1: Given the array above, write the callback for 'find' to return
-// the holiday object that occurs in the month of 'may'.
+// // Question 1: Given the array above, write the callback for 'find' to return
+// // the holiday object that occurs in the month of 'may'.
 
-const mayHoliday = holidays.find(holiday => holiday.month === "may");
-console.log(mayHoliday);
+// const mayHoliday = holidays.find(holiday => holiday.month === "may");
+// console.log(mayHoliday);
 
-// const words = ['cat','bath', 'orange', 'tap', 'bay', 'ha', 'etxravagant'];
+const words = ['cat','bath', 'orange', 'tap', 'bay', 'ha', 'etxravagant'];
 
 // // Question 2: Given the array above, write the callback for 'filter' to return
 // // a new array that only has the words from the original that had less than four
 // // letters
-// const wordsWithLessThanFourLetters = words.filter((word) => word.length < 4)
-// console.log(wordsWithLessThanFourLetters)
+const wordsWithLessThanFourLetters = words.filter((word) => word.length < 4)
+console.log(wordsWithLessThanFourLetters)
 
 // // Question 3: Given the same array of words, write the callback for 'every' to
 // // determine if all the words in the array contain the letter 'a'.
